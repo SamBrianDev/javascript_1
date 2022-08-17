@@ -45,16 +45,28 @@ equal.addEventListener('click', function() {
     if ( input1check == true & input2check == true ) {
         let input1 = document.getElementById("input1").value;
         let input2 = document.getElementById("input2").value;
-        //Change value inputs into floats
-        input1 = parseFloat(input1);
-        input2 = parseFloat(input2);
+        
+        if  ( !isNaN(input1) && !isNaN(input2)) {
+            window.console.log("Input 1 and input 2 are not numbers.");
+        }
+        else if ( !isNaN(input1) ) {
+            window.console.log("Input 1 is not a number");
+        }
+        else if ( !isNaN(input2) ) {
+            window.console.log("Input 2 is not a number");
+        }
+        else {
+            //Change value inputs into floats
+            input1 = parseFloat(input1);
+            input2 = parseFloat(input2);
 
-        //Values for following functions
-        telOp(input1, input2);
-        telAf(input1, input2);
-        vermedigvuldigen(input1, input2);
-        verdeel (input1, input2)
-        kwadraat (input1, input2);
+            //Values for following functions
+            telOp(input1, input2);
+            telAf(input1, input2);
+            vermedigvuldigen(input1, input2);
+            verdeel (input1, input2)
+            kwadraat (input1, input2);
+        }
     }
     else {
         console.log("Error, one or both input fields are empty or you are trying to divide through zero. Please make sure both are filled in before trying again.");
