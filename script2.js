@@ -81,7 +81,7 @@ on.addEventListener('click', ()=> {
         }
     }
     document.getElementById("statusButton").innerHTML = "On";
-})
+});
 off.addEventListener('click', ()=> {
     //Places URL of image in the background-image
     document.body.style.backgroundImage = "url('https://staticdelivery.nexusmods.com/images/130/960216-1288923381.jpg')";
@@ -133,7 +133,7 @@ off.addEventListener('click', ()=> {
         }
     }
     document.getElementById("statusButton").innerHTML = "Off";
-})
+});
 shut.addEventListener('click', ()=> {
     //Sets backgroundImage/background-image to "unset"
     document.body.style.backgroundImage = "unset";
@@ -187,7 +187,7 @@ shut.addEventListener('click', ()=> {
         }
     }
     document.getElementById("statusButton").innerHTML = "Shut";
-})
+});
 //Toggles another image roughly at the center
 middleOn.addEventListener('click', ()=> {
     /*Counts through array for which image to show
@@ -212,14 +212,18 @@ middleOn.addEventListener('click', ()=> {
         //Logs count reset
         window.console.log("Count has been reset to 0");
     }
-})
+});
 /*Toggles fastest record display
 This button is useless while no record is recorded*/
 recordButton.addEventListener('click', ()=> {
+    //Checks if there is a record
     if ( recordContentCheck == false ) {
+        //If there is no record
         window.console.log("There is no record to display. This button is currently useless.");
     }
     else {
+        /*If there is a record
+        Checks if the record is displayed*/
         if ( recordButtonCheck == false ) {
             //Turns on record display
             document.getElementById("record").style.display = "block";
@@ -233,4 +237,4 @@ recordButton.addEventListener('click', ()=> {
             recordButtonCheck = false;
         }
     }
-})
+});
