@@ -51,7 +51,7 @@ equal.addEventListener('click', function() {
             //If input 1 is a letter
             input1NumberCheck = false;
             window.console.log("Input 1 is not a number");
-            document.getElementById("Error").innerHTML += "Input 1 kan alleen cijfers bevatten";
+            document.getElementById("error").innerHTML += "Input 1 kan alleen cijfers bevatten";
         }
         else {
             //If input 1 is a number
