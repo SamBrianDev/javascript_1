@@ -1,0 +1,8 @@
+#middleImage {
+    width: 400px;
+    height: 400px;
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+}
