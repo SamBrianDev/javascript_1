@@ -68,6 +68,7 @@ on.addEventListener('click', ()=> {
             //Sets check to true
             fastestCheck = true;
             recordButtonCheck = true;
+            recordContentCheck = true;
         }
         else {
             //Checks every other time difference
@@ -76,9 +77,6 @@ on.addEventListener('click', ()=> {
                 fastestTime = timeTwo;
                 //Displays fastest time in milliseconds
                 document.getElementById("record").innerHTML = "Snelste tijd: " + fastestTime + " millisecondes";
-                if ( recordContentCheck == false ) {
-                    recordContentCheck = true;
-                }
             }
         }
     }
@@ -122,6 +120,7 @@ off.addEventListener('click', ()=> {
             //Sets check to true
             fastestCheck = true;
             recordButtonCheck = true;
+            recordContentCheck = true;
         }
         else {
             //Checks every other time difference
@@ -130,9 +129,6 @@ off.addEventListener('click', ()=> {
                 fastestTime = timeTwo;
                 //Displays fastest time in milliseconds
                 document.getElementById("record").innerHTML = "Snelste tijd: " + fastestTime + " millisecondes";
-                if ( recordContentCheck == false ) {
-                    recordContentCheck = true;
-                }
             }
         }
     }
@@ -178,6 +174,7 @@ shut.addEventListener('click', ()=> {
             //Sets check to true
             fastestCheck = true;
             recordButtonCheck = true;
+            recordContentCheck = true;
         }
         else {
             //Checks every other time difference
@@ -186,9 +183,6 @@ shut.addEventListener('click', ()=> {
                 fastestTime = timeTwo;
                 //Displays fastest time in milliseconds
                 document.getElementById("record").innerHTML = "Snelste tijd: " + fastestTime + " millisecondes";
-                if ( recordContentCheck == false ) {
-                    recordContentCheck = true;
-                }
             }
         }
     }
