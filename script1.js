@@ -1,9 +1,9 @@
 'use strict';
-let calculate = document.getElementById("calculate");
+let equal = document.getElementById("equal");
 let input1 = document.getElementById("input1");
 let input2 = document.getElementById("input2");
 
-calculate.addEventListener('click', function() {
+equal.addEventListener('click', function() {
     /*To check if both inputs are filled in
     Should one or both have no input, the calculations won't happen*/
     document.getElementById("error").innerHTML = "";
@@ -51,7 +51,7 @@ calculate.addEventListener('click', function() {
             //If input 1 is a letter
             input1NumberCheck = false;
             window.console.log("Input 1 is not a number");
-            document.getElementById("error").innerHTML += "Input 1 kan alleen cijfers bevatten";
+            document.getElementById("error").innerHTML += "Input 1 kan alleen cijfers bevatten.<br>";
         }
         else {
             //If input 1 is a number
@@ -64,14 +64,14 @@ calculate.addEventListener('click', function() {
             //If input 2 is a letter
             input2NumberCheck = false;
             window.console.log("Input 2 is not a number");
-            document.getElementById("error").innerHTML += "Input 2 kan alleen cijfers bevatten";
+            document.getElementById("error").innerHTML += "Input 2 kan alleen cijfers bevatten.<br>";
         }
         else {
             //If input 2 is a number
             input2NumberCheck = true;
             window.console.log("Input 2 is a number");
         }
-
+        //Checks if both inputs are a number
         if (input1NumberCheck == true && input2NumberCheck == true ) {
             //Change value inputs into floats
             input1 = parseFloat(input1);
