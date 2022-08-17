@@ -46,13 +46,13 @@ equal.addEventListener('click', function() {
         let input1 = document.getElementById("input1").value;
         let input2 = document.getElementById("input2").value;
         
-        if  ( !isNaN(input1) && !isNaN(input2)) {
+        if  ( isNaN(input1) && !isNaN(input2)) {
             window.console.log("Input 1 and input 2 are not numbers.");
         }
-        else if ( !isNaN(input1) ) {
+        else if ( isNaN(input1) ) {
             window.console.log("Input 1 is not a number");
         }
-        else if ( !isNaN(input2) ) {
+        else if ( isNaN(input2) ) {
             window.console.log("Input 2 is not a number");
         }
         else {
