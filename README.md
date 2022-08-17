@@ -6,3 +6,6 @@ Amsterdam Tech Academy JS assignment
 * JavaScript
 * HTML
 * CSS
+
+The homepage can be found here:<br>
+[Homepage](https://sambriandev.github.io/javascript_1/)
