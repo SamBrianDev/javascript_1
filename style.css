@@ -1,6 +1,14 @@
+/* Header */
 #header p { display: inline; }
-#header p a { color: #000; }
 #header p a {
 	color: #000;
 	padding: 10px;
+	text-decoration: none;
 }
+#header p a:hover {
+	color: #fff;
+	background-color: #000;
+}
+
+/* Homepage */
+#imagebuttons input { padding: 5px 10px; }
