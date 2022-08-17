@@ -76,6 +76,9 @@ on.addEventListener('click', ()=> {
                 fastestTime = timeTwo;
                 //Displays fastest time in milliseconds
                 document.getElementById("record").innerHTML = "Snelste tijd: " + fastestTime + " millisecondes";
+                if ( recordContentCheck == false ) {
+                    recordContentCheck = true;
+                }
             }
         }
     }
@@ -127,6 +130,9 @@ off.addEventListener('click', ()=> {
                 fastestTime = timeTwo;
                 //Displays fastest time in milliseconds
                 document.getElementById("record").innerHTML = "Snelste tijd: " + fastestTime + " millisecondes";
+                if ( recordContentCheck == false ) {
+                    recordContentCheck = true;
+                }
             }
         }
     }
@@ -180,6 +186,9 @@ shut.addEventListener('click', ()=> {
                 fastestTime = timeTwo;
                 //Displays fastest time in milliseconds
                 document.getElementById("record").innerHTML = "Snelste tijd: " + fastestTime + " millisecondes";
+                if ( recordContentCheck == false ) {
+                    recordContentCheck = true;
+                }
             }
         }
     }
