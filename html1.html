@@ -137,10 +137,9 @@
                 window.alert(new Intl.DateTimeFormat( 'nl-NL', { calendar: 'japanese', timeZone: 'Japan', dateStyle: 'full', timeStyle: 'full' }).format(date));
             })
 
-            for (wiseCount in wise){
-                wise[wiseCount].addEventListener("mouseover", myWiseOverFunction);
-                wise[wiseCount].addEventListener("mouseout", myDateOutFunction);
-            }
+            wise.addEventListener("mouseover", myWiseOverFunction);
+            wise.addEventListener("mouseout", myDateOutFunction);
+            
             function myWiseOverFunction() {
                 count = count + 1;
                 document.getElementById("myscriptdemo").innerHTML += "The mouse went over the button " + count + " times<br>";
