@@ -3,7 +3,7 @@ let calculate = document.getElementById("calculate");
 let input1 = document.getElementById("input1");
 let input2 = document.getElementById("input2");
 
-equal.addEventListener('click', function() {
+calculate.addEventListener('click', function() {
     /*To check if both inputs are filled in
     Should one or both have no input, the calculations won't happen*/
     document.getElementById("error").innerHTML = "";
@@ -44,7 +44,7 @@ equal.addEventListener('click', function() {
         }
     }
     //Check both inputs
-    if ( input1Check == true & input2Check == true ) {
+    if ( input1Check == true && input2Check == true ) {
         let input1 = document.getElementById("input1").value;
         //Checks if input 1 is a number
         if ( isNaN(input1) ) {
@@ -63,7 +63,7 @@ equal.addEventListener('click', function() {
         if ( isNaN(input2) ) {
             //If input 2 is a letter
             input2NumberCheck = false;
-            indow.console.log("Input 2 is not a number");
+            window.console.log("Input 2 is not a number");
             document.getElementById("error").innerHTML += "Input 2 kan alleen cijfers bevatten";
         }
         else {
@@ -81,17 +81,17 @@ equal.addEventListener('click', function() {
             telOp(input1, input2);
             telAf(input1, input2);
             vermedigvuldigen(input1, input2);
-            verdeel (input1, input2)
+            verdeel (input1, input2);
             kwadraat (input1, input2);
         }
         else {
-            window.console.log("One or both inputs contain a letter, please make the correct adjustments before continuing")
+            window.console.log("One or both inputs contain a letter, please make the correct adjustments before continuing");
         }
     }
     else {
         console.log("Error, one or both input fields are empty or you are trying to divide through zero. Please make sure both are filled in before trying again.");
     }
-})
+});
 //Function for calculations
 function telOp(input1, input2) {
     let answer = input1 + input2;
