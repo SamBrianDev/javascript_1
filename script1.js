@@ -64,7 +64,7 @@ equal.addEventListener('click', function() {
             //If input 2 is a letter
             input2NumberCheck = false;
             indow.console.log("Input 2 is not a number");
-            document.getElementById("Error").innerHTML += "Input 2 kan alleen cijfers bevatten";
+            document.getElementById("error").innerHTML += "Input 2 kan alleen cijfers bevatten";
         }
         else {
             //If input 2 is a number
